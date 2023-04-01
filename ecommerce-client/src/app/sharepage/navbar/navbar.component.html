@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">EcommerceProject</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home <i class="bi bi-house"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="catalog" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Catalog <i class="bi bi-card-list"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="cart" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Cart <i class="bi bi-cart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">About us <i class="bi bi-balloon"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Contact <i class="bi bi-at"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="signup" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Sign In <i class="bi bi-person-circle"></i> </a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-md btn-dark mt-3" routerLink="signup" (click)="logOut()"> Log out <i class="bi bi-arrow-up"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

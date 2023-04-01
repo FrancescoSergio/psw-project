@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link
+{
+  color: var(--secondary-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active-link
+{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.btn
+{
+  color:aliceblue;
+  position: relative;
+  bottom: 13px;
+}

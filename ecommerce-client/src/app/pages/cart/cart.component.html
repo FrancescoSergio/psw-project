@@ -1,0 +1,25 @@
+
+<div class="not-logged-cart-banner" *ngIf="!isLogged">
+   <div class="not-logged-content">
+     <h1 class="mb-5">Log in to access <br/>the purchasing services!</h1>
+     <a routerLink="../signup">Sign in <i class="bi bi-arrow-right"></i></a>
+   </div>
+ </div>
+
+<div class="is-logged-cart-banner" *ngIf="isLogged">
+  <h1 class="mb-5">My Cart</h1>
+  <button class="cmpltbtn" (click)="completePurchase()"> Complete Purchase <i class="bi bi-bag-heart"></i></button>
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let ci of cartItems">
+        <div class="productBox mt-3 mb-3">
+            <img src="{{ci.product.imgUrl}}">
+            <h1>{{ci.product.name}}</h1>
+            <p>Quantity : {{ci.quantity}}<br/> Total : ${{ci.product.price * ci.quantity }}</p>
+            <form class="form">
+              <input type="number" min="0" class="form-control" #box (click)="setQuantityToRemove(box.value)" placeholder="How much?" name="quantity">
+              <button class="rmvbtn" (click)="removeItemFromCart($event,ci,box.value)">Remove Item &nbsp; <i class="bi bi-trash3"></i></button>
+            </form>
+         </div>
+      </div>
+  </div>
+</div>

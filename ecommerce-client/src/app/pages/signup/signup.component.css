@@ -1,0 +1,23 @@
+.banner
+{
+  background-image: url('../../../assets/img/banner.jpg');
+  height: 800px;
+  background-position: center top;
+  background-size: cover;
+
+}
+.content
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+.content h1
+{
+  color:aliceblue;
+}
+.form-control
+{
+  width: 170%;
+}
